@@ -10,3 +10,19 @@ for i in range (0 , 9):
          print("Paathu adiye da ")
          i = i + 1
 print(a)
+
+def insert_sort(a):
+    for i in range(len(a)):
+        key = a[i]
+        j = i - 1
+        while j >= 0 and key < a[j]:
+                a [j - 1 ] = a[j]
+                j = j + 1
+        a[j + 1] = key
+
+
+
+insert_sort(a)
+
+print("Sorted array \n, ", a)
+
